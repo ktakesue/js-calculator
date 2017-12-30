@@ -9,7 +9,7 @@ function calculatorModule(){
     let _memory = 0;
     let _total = 0;
       
-    return {
+    return Calculator = {
         load : load,
         getTotal : getTotal,
         add : add,
@@ -105,7 +105,7 @@ function calculatorModule(){
    */
   function Validation(x){
     if (typeof x !== 'number'){
-         throw error;
+         throw Error ("not a number, you fool");
     }
   }
 }
